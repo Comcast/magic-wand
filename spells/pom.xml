@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.comcast.magic-wand</groupId>
+        <artifactId>magic-wand</artifactId>
+        <version>3.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spells</artifactId>
+    <packaging>pom</packaging>
+
+    <name>(${project.organization.name}) ${project.artifactId}</name>
+    <description>Comcast-created magic wand entry parent pom.</description>
+
+    <properties>
+        <magic-wand.core.version>${project.version}</magic-wand.core.version>
+        <appium.client.version>2.2.0</appium.client.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.comcast.magic-wand</groupId>
+                <artifactId>core</artifactId>
+                <version>${magic-wand.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.appium</groupId>
+                <artifactId>java-client</artifactId>
+                <version>${appium.client.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>appium</module>
+        <module>chrome</module>
+        <module>firefox</module>
+        <module>iexplore</module>
+        <module>phantomjs</module>
+        <module>safari</module>
+        <module>saucelabs</module>
+    </modules>
+
+</project>

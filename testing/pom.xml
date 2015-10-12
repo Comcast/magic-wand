@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.comcast.magic-wand</groupId>
+        <artifactId>magic-wand</artifactId>
+        <version>3.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>testing</artifactId>
+
+    <name>(${project.organization.name}) ${project.artifactId}</name>
+    <description>Tests for magic-wand that require submodules</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>core</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>appium</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>chrome</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>firefox</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>iexplore</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>phantomjs</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>safari</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.comcast.magic-wand</groupId>
+            <artifactId>saucelabs</artifactId>
+            <version>3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+        </dependency>
+    </dependencies>
+</project>
