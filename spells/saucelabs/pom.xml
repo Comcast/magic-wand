@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.comcast.magic-wand</groupId>
         <artifactId>spells</artifactId>
-        <version>3.0-SNAPSHOT</version>
+        <version>4.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>saucelabs</artifactId>
@@ -14,7 +14,7 @@
 
     <properties>
         <sauce.connect.version>2.1.19</sauce.connect.version>
-        <drive-thru.version>[1.0.12,1.1)</drive-thru.version>
+        <drive-thru.version>[2.0,2.1)</drive-thru.version>
     </properties>
 
     <dependencies>
