@@ -16,7 +16,7 @@
     <properties>
         <magic-wand.core.version>${project.version}</magic-wand.core.version>
         <appium.client.version>2.2.0</appium.client.version>
-        <drive-thru.version>2.0.1</drive-thru.version>
+        <drive-thru.version>2.0.3-SNAPSHOT</drive-thru.version>
     </properties>
 
     <dependencyManagement>
