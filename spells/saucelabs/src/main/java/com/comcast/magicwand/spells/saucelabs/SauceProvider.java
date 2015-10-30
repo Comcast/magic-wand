@@ -28,11 +28,11 @@ import java.util.Map;
 
 import com.comcast.cookie.CookieHandler;
 import com.comcast.cookie.handlers.GeneralCookieHandler;
-import com.comcast.csv.drivethru.api.HTTPRequestManager;
-import com.comcast.csv.drivethru.api.HTTPRequestManager.Builder;
-import com.comcast.csv.drivethru.api.HTTPRequestManager.METHOD;
-import com.comcast.csv.drivethru.constants.ServerStatusCodes;
-import com.comcast.csv.drivethru.model.ResponseContainer;
+import com.comcast.drivethru.api.HTTPRequestManager;
+import com.comcast.drivethru.api.HTTPRequestManager.Builder;
+import com.comcast.drivethru.api.HTTPRequestManager.METHOD;
+import com.comcast.drivethru.constants.ServerStatusCodes;
+import com.comcast.drivethru.model.ResponseContainer;
 import com.comcast.magicwand.builders.PhoenixDriverIngredients;
 import com.comcast.magicwand.drivers.PhoenixDriver;
 import com.comcast.magicwand.enums.DesktopOS;

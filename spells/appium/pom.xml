@@ -29,6 +29,10 @@
             <version>${dawg.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.comcast.drivethru</groupId>
+            <artifactId>drive-thru</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>core</artifactId>
         </dependency>

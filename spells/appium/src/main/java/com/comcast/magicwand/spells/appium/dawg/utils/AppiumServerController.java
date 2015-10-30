@@ -19,11 +19,11 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import com.comcast.csv.drivethru.api.HTTPRequestManager;
-import com.comcast.csv.drivethru.api.HTTPRequestManager.Builder;
-import com.comcast.csv.drivethru.api.HTTPRequestManager.METHOD;
-import com.comcast.csv.drivethru.constants.ServerStatusCodes;
-import com.comcast.csv.drivethru.model.ResponseContainer;
+import com.comcast.drivethru.api.HTTPRequestManager;
+import com.comcast.drivethru.api.HTTPRequestManager.Builder;
+import com.comcast.drivethru.api.HTTPRequestManager.METHOD;
+import com.comcast.drivethru.constants.ServerStatusCodes;
+import com.comcast.drivethru.model.ResponseContainer;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

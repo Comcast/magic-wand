@@ -16,6 +16,7 @@
     <properties>
         <magic-wand.core.version>${project.version}</magic-wand.core.version>
         <appium.client.version>2.2.0</appium.client.version>
+        <drive-thru.version>2.0.1</drive-thru.version>
     </properties>
 
     <dependencyManagement>
@@ -29,6 +30,11 @@
                 <groupId>io.appium</groupId>
                 <artifactId>java-client</artifactId>
                 <version>${appium.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.comcast.drivethru</groupId>
+                <artifactId>drive-thru</artifactId>
+                <version>${drive-thru.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

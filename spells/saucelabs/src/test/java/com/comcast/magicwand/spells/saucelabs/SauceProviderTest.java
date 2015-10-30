@@ -33,8 +33,8 @@ import java.util.Set;
 
 import com.comcast.cookie.CookieHandler;
 import com.comcast.cookie.handlers.GeneralCookieHandler;
-import com.comcast.csv.drivethru.api.HTTPRequestManager;
-import com.comcast.csv.drivethru.model.ResponseContainer;
+import com.comcast.drivethru.api.HTTPRequestManager;
+import com.comcast.drivethru.model.ResponseContainer;
 import com.comcast.magicwand.builders.PhoenixDriverIngredients;
 import com.comcast.magicwand.drivers.PhoenixDriver;
 import com.comcast.magicwand.exceptions.FlyingPhoenixException;

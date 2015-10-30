@@ -14,14 +14,12 @@
 
     <properties>
         <sauce.connect.version>2.1.19</sauce.connect.version>
-        <drive-thru.version>[2.0,2.1)</drive-thru.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.comcast.csv.drivethru</groupId>
+            <groupId>com.comcast.drivethru</groupId>
             <artifactId>drive-thru</artifactId>
-            <version>${drive-thru.version}</version>
         </dependency>
         <dependency>
             <groupId>com.saucelabs.maven.plugin</groupId>
