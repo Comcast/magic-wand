@@ -14,7 +14,7 @@
 
     <properties>
         <appium.client.version>2.2.0</appium.client.version>
-        <dawg.version>[1.1.64,1.2.0)</dawg.version>
+        <dawg.version>2.0.1</dawg.version>
     </properties>
 
     <dependencies>
