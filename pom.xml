@@ -63,6 +63,9 @@
         <git.url>github.com</git.url>
         <git.repo>magic-wand</git.repo>
         <git.org>Comcast</git.org>
+
+        <!-- Release Control -->
+        <autoReleaseAfterClose>false</autoReleaseAfterClose>
     </properties>
 
     <scm>
