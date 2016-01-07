@@ -14,7 +14,7 @@
     <description>Comcast-created magic wand entry parent pom.</description>
 
     <properties>
-        <magic-wand.core.version>4.0.2-SNAPSHOT</magic-wand.core.version>
+        <magic-wand.core.version>${project.version}</magic-wand.core.version>
         <appium.client.version>2.2.0</appium.client.version>
         <drive-thru.version>2.0.3</drive-thru.version>
     </properties>
