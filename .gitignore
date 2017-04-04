@@ -4,3 +4,5 @@ target
 .classpath
 /bin/
 test-output/
+*.iml
+.idea
