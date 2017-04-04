@@ -13,7 +13,7 @@
     <description>Comcast-created magic wand entry for saucelabs.</description>
 
     <properties>
-        <sauce.connect.version>2.1.19</sauce.connect.version>
+        <sauce.connect.version>2.1.23</sauce.connect.version>
     </properties>
 
     <dependencies>

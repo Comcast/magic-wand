@@ -38,7 +38,6 @@ import com.comcast.magicwand.drivers.PhoenixDriver;
 import com.comcast.magicwand.enums.DesktopOS;
 import com.comcast.magicwand.exceptions.FlyingPhoenixException;
 import com.saucelabs.ci.sauceconnect.SauceConnectFourManager;
-import com.saucelabs.ci.sauceconnect.SauceConnectTwoManager;
 import com.saucelabs.ci.sauceconnect.SauceTunnelManager;
 
 import org.apache.commons.codec.binary.Base64;
@@ -326,7 +325,7 @@ public class SauceProvider {
 
         int vpnVersion;
         if (null == vv) {
-            vpnVersion = 3;
+            vpnVersion = 4;
             LOG.warn("Sauce Connect version was not specified... Defaulting to '{}'", Integer.toString(vpnVersion));
         }
         else {
@@ -356,15 +355,16 @@ public class SauceProvider {
                 "Establishing a VPN connection using the following arguments: { port = {}; options = {}; quietMode = {} }",
                 vpnPort, vpnOptions, !vpnQm);
 
-        if (4 != vpnVersion && 3 != vpnVersion) {
-            String msg = String.format("Unsupported Sauce Connect version '%d'. Valid versions are '3' and '4'", vpnVersion);
+        if (4 != vpnVersion) {
+            String msg = String.format("Unsupported Sauce Connect version '%d'. Valid version is '4'", vpnVersion);
             LOG.error(msg);
             throw new FlyingPhoenixException(msg);
         }
 
-        SauceTunnelManager vpnManager = (4 == vpnVersion) ? new SauceConnectFourManager(vpnQm) : new SauceConnectTwoManager(vpnQm);
+        SauceTunnelManager vpnManager = new SauceConnectFourManager(vpnQm);
+
         try {
-            vpnManager.openConnection(username, apiKey, vpnPort, null, vpnOptions, null, null, !useVpn);
+            vpnManager.openConnection(username, apiKey, vpnPort, null, vpnOptions, null, !useVpn, null);
         }
         catch (IOException e) {
             vpnManager = null;
