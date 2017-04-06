@@ -40,16 +40,16 @@ public abstract class AbstractWebPhoenixDriver<T extends WebDriver> extends Abst
     }
 
     /**
-     * @see {@link SystemDetail#deviceIsRunningMac()}
-     * @return
+     * {@link SystemDetail#deviceIsRunningMac()}
+     * @return True if system is mac; False otherwise
      */
     protected boolean isRunningMac() {
         return SystemDetail.deviceIsRunningMac();
     }
 
     /**
-     * @see {@link SystemDetail#deviceIsLinux()}
-     * @return
+     * {@link SystemDetail#deviceIsLinux()}
+     * @return True if system is Linux; False otherwise
      */
     protected boolean isRunningLinux() {
         return SystemDetail.deviceIsLinux();
@@ -57,8 +57,8 @@ public abstract class AbstractWebPhoenixDriver<T extends WebDriver> extends Abst
 
 
     /**
-     * @see {@link SystemDetail#deviceIsRunningWindows()}
-     * @return
+     * {@link SystemDetail#deviceIsRunningWindows()}
+     * @return True if system is Windows; False otherwise
      */
     protected boolean isRunningWindows() {
         return SystemDetail.deviceIsRunningWindows();
@@ -67,10 +67,10 @@ public abstract class AbstractWebPhoenixDriver<T extends WebDriver> extends Abst
     /**
      * Set property into system
      *
-     * @see {@link System#setProperty(String, String)}
+     * {@link System#setProperty(String, String)}
      *
-     * @param key
-     * @param value
+     * @param key Name of property to set
+     * @param value Value of property
      */
     protected void systemSetProperty(String key, String value) {
         System.setProperty(key, value);

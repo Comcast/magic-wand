@@ -43,11 +43,13 @@ public abstract class AbstractPhoenixDriver implements PhoenixDriver {
     /**
      * Wrapper for {@link FileUtils#copyFile(File, File)}
      *
-     * @param src
-     * @param dst
-     * @throws IOException
+     * @param src  an existing file to copy, must not be {@code null}
+     * @param dst the new file, must not be {@code null}
+     * @throws NullPointerException if source or destination is {@code null}
+     * @throws IOException if source or destination is invalid
+     * @throws IOException if an IO error occurs during copying
      */
-    protected void fileUtilsCopyFile(File src, File dst) throws IOException {
+    protected void fileUtilsCopyFile(File src, File dst) throws IOException, NullPointerException {
         FileUtils.copyFile(src, dst);
     }
 

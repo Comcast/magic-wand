@@ -31,17 +31,13 @@ public class DawgWizardFactory implements WizardFactory {
 
     /**
      * {@inheritDoc}
-     * @throws FlyingPhoenixException If there was a problem creating a driver
-     * @throws DeviceProviderException If there was a problem getting list of reserved devices
+     * @throws FlyingPhoenixException If there was a problem creating a driver or getting list of reserved devices
      */
     @Override
     public PhoenixDriver create(PhoenixDriverIngredients ingredients) throws FlyingPhoenixException {
-        PhoenixDriver rv = null;
         DawgWizard wizard = new DawgWizard(ingredients);
 
-        rv = wizard.createDriver();
-
-        return rv;
+        return wizard.createDriver();
     }
 
     /**

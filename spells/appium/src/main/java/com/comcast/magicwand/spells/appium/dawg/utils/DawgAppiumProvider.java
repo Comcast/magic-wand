@@ -61,8 +61,7 @@ public class DawgAppiumProvider {
     private AppiumDriverBuilder appiumDriverBuilder;
 
     /**
-     * Manually specified dawg reservation token <br>
-     * <em><b>NOTE</b></em>: calling {@link DawgAppiumProvider#withProperties(DawgProperties)} after calling this method
+     * Manually specified dawg reservation token
      * would overwrite this value
      *
      * @param dawgToken Dawg reservation token to use to get the reserved devices
@@ -75,9 +74,7 @@ public class DawgAppiumProvider {
     }
 
     /**
-     * Manually specified dawg pund URL <br>
-     * <em><b>NOTE</b></em>: calling {@link DawgAppiumProvider#withProperties(DawgProperties)} after calling this method
-     * would overwrite this value <br>
+     * Manually specified dawg pund URL
      *
      * @param dawgPoundURL Dawg reservation URL
      * @return this builder
@@ -153,15 +150,12 @@ public class DawgAppiumProvider {
     /**
      * Validates that all required parameters have been set by the builder
      *
-     * @throws DeviceProviderException In case any parameters were missed. Required parameters are:
+     * @throws FlyingPhoenixException In case any parameters were missed. Required parameters are:
      * <ul>
-     * <li>Dawg Pound Client. Set using {@link DawgAppiumProvider#withDawgClient(DawgPoundClient)}</li>
-     * <li>Dawg Pound URL. Set using {@link DawgAppiumProvider#forDawgPoundURL(String)} or
-     * {@link DawgAppiumProvider#withProperties(DawgProperties)}</li>
-     * <li>Dawg Pound Token. Set using {@link DawgAppiumProvider#forDawgToken(String)} or
-     * {@link DawgAppiumProvider#withProperties(DawgProperties)}</li>
-     * {@link DawgAppiumProvider#withProperties(DawgProperties)}</li>
-     * <li>Device Family Type. Set using {@link DawgAppiumProvider#forDeviceType(FamilyType)}</li>
+     * <li>Dawg Pound Client. Set using {@link #withDawgClient(DawgPoundClient)}</li>
+     * <li>Dawg Pound URL. Set using {@link #forDawgPoundURL(String)}</li>
+     * <li>Dawg Pound Token. Set using {@link #forDawgToken(String)}</li>
+     * <li>Device Family Type. Set using {@link #forDeviceType(FamilyType)}</li>
      * </ul>
      */
     protected void validateBuilderFields() throws FlyingPhoenixException {
@@ -200,13 +194,11 @@ public class DawgAppiumProvider {
      * is returned
      *
      * @return Instance of a driver
-     * @throws DeviceProviderException In case any parameters were missed. Required parameters are:
+     * @throws FlyingPhoenixException In case any parameters were missed. Required parameters are:
      * <ul>
-     * <li>Dawg Pound URL. Set using {@link DawgAppiumProvider#forDawgPoundURL(String)} or
-     * {@link DawgAppiumProvider#withProperties(DawgProperties)}</li>
-     * <li>Dawg Pound Token. Set using {@link DawgAppiumProvider#forDawgToken(String)} or
-     * {@link DawgAppiumProvider#withProperties(DawgProperties)}</li>
-     * <li>Device Family Type. Set using {@link DawgAppiumProvider#forDeviceType(FamilyType)}</li>
+     * <li>Dawg Pound URL. Set using {@link #forDawgPoundURL(String)}</li>
+     * <li>Dawg Pound Token. Set using {@link #forDawgToken(String)}</li>
+     * <li>Device Family Type. Set using {@link #forDeviceType(FamilyType)}</li>
      * </ul>
      * @throws FlyingPhoenixException If Appium is not running or cannot be connected to. This is thrown during
      * {@link IOSDriver} or {@link AndroidDriver} creation

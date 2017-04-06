@@ -41,7 +41,6 @@ import org.slf4j.LoggerFactory;
  * Web Driver for controlling Chrome browser
  *
  * @author Trent Schmidt
- * @param <T> Type of a web driver to be created
  *
  */
 public class ChromePhoenixDriver extends AbstractWebPhoenixDriver<ChromeDriver> {
@@ -75,6 +74,17 @@ public class ChromePhoenixDriver extends AbstractWebPhoenixDriver<ChromeDriver> 
         return latest;
     }
 
+    /**
+     * Get current OS Type
+     * @return String representation of OS Type. Returned values include:<br>
+     *     <ul>
+     *         <li>_mac32 - for Mac</li>
+     *         <li>_win32 - for Windows</li>
+     *         <li>_linux32 - for Linux</li>
+     *         <li>_linux64 - for Linux x64</li>
+     *         <li>empty string - if OS type could not be determined</li>
+     *     </ul>
+     */
     public static String getCurrentOSType() {
         String osArch = System.getProperty("sun.arch.data.model");
 
