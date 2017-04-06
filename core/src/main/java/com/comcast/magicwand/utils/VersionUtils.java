@@ -30,7 +30,7 @@ public class VersionUtils {
      * @param lhs The left hand side of the comparator
      * @param rhs The right hand side of the comparator
      *
-     * @return -1, 0, or 1 based on the {@see Comparable} interface
+     * @return -1, 0, or 1 based on the {@link Comparable} interface
      */
     public static int compare(String lhs, String rhs) {
         if(lhs == rhs)
