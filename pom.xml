@@ -4,7 +4,7 @@
 
     <groupId>com.comcast.magic-wand</groupId>
     <artifactId>magic-wand</artifactId>
-    <version>4.0.3</version>
+    <version>4.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
     <url>https://github.com/Comcast/magic-wand</url>
     <description>magic-wand is a helper for creating WebDrivers</description>
@@ -71,7 +71,7 @@
         <connection>scm:git:git@${git.url}:${git.org}/${git.repo}.git</connection>
         <developerConnection>scm:git:git@${git.url}:${git.org}/${git.repo}.git</developerConnection>
         <url>https://${git.url}/${git.org}/${git.repo}</url>
-        <tag>magic-wand-4.0.3</tag>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <system>Git</system>

@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.comcast.magic-wand</groupId>
         <artifactId>magic-wand</artifactId>
-        <version>4.0.3</version>
+        <version>4.0.4-SNAPSHOT</version>
     </parent>
 
     <artifactId>testing</artifactId>
@@ -16,42 +16,42 @@
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>core</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>appium</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>chrome</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>firefox</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>iexplore</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>phantomjs</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>safari</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.comcast.magic-wand</groupId>
             <artifactId>saucelabs</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
