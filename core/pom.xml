@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.comcast.magic-wand</groupId>
         <artifactId>magic-wand</artifactId>
-        <version>4.0.3-SNAPSHOT</version>
+        <version>4.0.3</version>
     </parent>
 
     <artifactId>core</artifactId>
